@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- En esta parte la idea es que el cliente pueda realizar un pedido y para que a nosotros nos quede un registro se los hace ingresar con los datos dispuestos en el formulario html -->
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto para información</title>
+    <title>Formulario de Contacto</title>
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css
+    ">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__tittle">Locos x el Mate</h2>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="index.html" class="nav__links">Inicio</a>
+                </li>
+            </ul>
+            <div class="nav__menu">
+                <img src="./images/menu.svg" alt="nav__menu">
+            </div>
+        </nav>
+    </header>
     <section>
         <h2>Contacto</h2>
         <form action="">
@@ -25,26 +42,15 @@
             <input type="text"name="apellido" id="apellido" placeholder="Ingresá tu apellido">
             <br>
             <br>
-            <label for="Hombre">Hombre</label>
-            <input type="radio" name="sexo" value="hombre"/>
-            <label for="Mujer">Mujer</label>
-            <input type="radio" name="sexo" value="mujer">
-            <br>
-            <br>
             <label for="">Email</label>
             <input type="email"name="email" id="email" placeholder="Ingresá tu email">
             <br>
             <br>
-            <label for="Clave"> Contraseña</label>
-            <input type="password"name="password" id="password" placeholder="Ingresá tu clave">
+            <label for="Pedido"></label>
             <br>
+            <textarea name="Pedido" id="Consulta" cols="50" rows="10" placeholder="Escriba aquí su comentario"></textarea>
             <br>
-            <label for="Pedido">Pedido</label>
-            <br>
-            <textarea name="Pedido" id="Consulta" cols="30" rows="10"></textarea>
-            <br>
-            <input type="submit" value="Enviar formulario">
-            <input type="reset" value="Limpiar formulario">
+            <input type="submit" value="Enviar comentario">
             </fieldset>
         </form>
     </section>
